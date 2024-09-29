@@ -38,6 +38,41 @@ If `virt-manager` is installed on a modern distro (which has ported all of its
 Python apps to Python 3), then everything should already be installed, aside
 from `ffmpeg`.
 
+---
+
+Handling requirements on **Ubuntu** jammy:
+
+`libvirt-python`
+
+```bash
+sudo apt install libvirt-dev -y
+```
+
+`spice-glib`
+
+```bash
+sudo apt install libspice-client-glib-2.0-dev -y
+```
+
+`pygobject3` or `PyGObject`
+
+```bash
+sudo apt install ffmpeg libgirepository1.0-dev gcc libcairo2-dev pkg-config python3-dev gir1.2-gtk-4.0 -y
+```
+
+`ffmpeg`
+
+```bash
+sudo apt install ffmpeg -y
+```
+
+Finally, resolving `pypi` dependencies:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+
 ## Notes
 Currently, the spice server only supports a single client connection. When
 another connection is opened, the current one is disconnected. Thus, this
