@@ -45,25 +45,25 @@ Handling requirements on **Ubuntu** jammy:
 `libvirt-python`
 
 ```bash
-sudo apt install libvirt-dev -y
+sudo apt update && sudo apt install libvirt-dev -y
 ```
 
 `spice-glib`
 
 ```bash
-sudo apt install libspice-client-glib-2.0-dev -y
+sudo apt update && sudo apt install libspice-client-glib-2.0-dev -y
 ```
 
 `pygobject3` or `PyGObject`
 
 ```bash
-sudo apt install ffmpeg libgirepository1.0-dev gcc libcairo2-dev pkg-config python3-dev gir1.2-gtk-4.0 -y
+sudo apt update && sudo apt install ffmpeg libgirepository1.0-dev gcc libcairo2-dev pkg-config python3-dev gir1.2-gtk-4.0 -y
 ```
 
 `ffmpeg`
 
 ```bash
-sudo apt install ffmpeg -y
+sudo apt update && sudo apt install ffmpeg -y
 ```
 
 Finally, resolving `pypi` dependencies:
